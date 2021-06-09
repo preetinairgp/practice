@@ -1,3 +1,5 @@
+#Question2
+
 # #1. Create an R script within this directory that reads the Sydney
 # coronavirus data and plots the number of hospital beds needed
 # between July and December of 2020.
@@ -17,13 +19,15 @@ c %>% filter((c>="2020-07-01")&(c<="2020-02-31"))
 
 g <- ggplot(data=c)
 
-g <- g+geom_line(mapping=aes(x=t,y=H))
+g <- g+geom_line(mapping=aes(x=t,y=H))+
+   scale_x_date(date_labels = "%d %b %Y")
 print(g)
 
 
+# Question3: Updating Scripts
 
 
 
 
-# 2. Add the script to the repository and commit the changes.
-# 3. View the log message.
+
+
