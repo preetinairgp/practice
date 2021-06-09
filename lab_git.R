@@ -39,7 +39,7 @@ print(g)
 g <- g+geom_line(mapping=aes(x=t,y=H,colour="red"))+
    geom_line(mapping=aes(x=t,y=C,colour="blue"))+
    geom_line(mapping=aes(x=t,y=D,colour="black"))+
-scale_x_date(date_labels = "%d %b %Y")+
+scale_x_date(date_labels = "%d %b %Y")+ scale_y_sqrt()+
    labs(x="Date", y="no. of hosp beds", title="sydney hosp detail", colour="state")
 print(g)
 
