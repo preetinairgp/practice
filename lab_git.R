@@ -27,6 +27,10 @@ print(g)
 # Question3: Updating Scripts
 
 
+g <- g+geom_line(mapping=aes(x=t,y=H),colour="red")+
+   scale_x_date(date_labels = "%d %b %Y")+
+   labs(x="Date", y="no. of hosp beds", title="sydney hosp detail")
+print(g)
 
 
 
